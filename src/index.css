@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  justify-content: center;
+
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+.card--main {
+  max-width: 319px;
+  background-color: #1A1B21;
+  border-radius: 10px;
+  margin: 3rem 0;
+}
+
+.card--header img {
+  border-radius: 10px 10px 0 0;
+}
+
+.card--header h1 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card--header h4 {
+  margin: 5px;
+  font-weight: 400;
+  font-size: medium;
+  line-height: 15px;
+  text-align: center;
+
+  color: #F3BF99;
+}
+
+.card--header a {
+  margin: 5px 5px 10px 5px;
+  font-size: small;
+  display: block;
+  text-align: center;
+}
+
+.card--header_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card--header_buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 115px;
+  padding: 10px 40px;
+  border-radius: 6px;
+  border: none;
+}
+
+.card--header_buttons button.linkedinButton{
+  color: white;
+  background-color: #5093E2;
+}
+
+.card--header_buttons img {
+  width: 13px;
+  height: 13px;
+  border-radius: 0;
+  margin-right: 5px;
+}
+
+.card--body {
+  padding: 0 34px;
+}
+
+.card--body p {
+  text-align: justify;
+}
+
+.card--footer-social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #161619;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.card--footer-social img{
+  width: 25px;
+  height: 25px;
+}
