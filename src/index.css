@@ -1,20 +1,13 @@
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  justify-content: center;
-
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+:root {
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
+  
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -22,13 +15,16 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-#root {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: gray;
+}
+
+section {
+  padding: 20px;
 }
 
 a {
@@ -40,88 +36,115 @@ a:hover {
   color: #535bf2;
 }
 
-.card--main {
-  max-width: 319px;
-  background-color: #1A1B21;
-  border-radius: 10px;
-  margin: 3rem 0;
-}
-
-.card--header img {
-  border-radius: 10px 10px 0 0;
-}
-
-.card--header h1 {
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.card--header h4 {
-  margin: 5px;
-  font-weight: 400;
-  font-size: medium;
-  line-height: 15px;
-  text-align: center;
-
-  color: #F3BF99;
-}
-
-.card--header a {
-  margin: 5px 5px 10px 5px;
-  font-size: small;
-  display: block;
-  text-align: center;
-}
-
-.card--header_buttons {
+body {
+  margin: 0;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.card--header_buttons button {
-  display: flex;
-  align-items: center;
+  place-items: center;
   justify-content: center;
-  width: 115px;
-  padding: 10px 40px;
-  border-radius: 6px;
-  border: none;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
-.card--header_buttons button.linkedinButton{
-  color: white;
-  background-color: #5093E2;
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
-.card--header_buttons img {
-  width: 13px;
-  height: 13px;
-  border-radius: 0;
-  margin-right: 5px;
+.main {
+  width: 550px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.main nav {
+  display: flex;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main nav img {
+  margin: 20px 30px;
+}
+
+.hero--body {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+}
+.hero--image {
+  align-self: center;
+}
+
+.hero--h1 {
+  margin: 32px 0 0 12px;
+}
+
+.hero--paragraph {
+  max-width: 320px;
+  margin-left: 12px;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
 }
 
 .card--body {
-  padding: 0 34px;
+  position: relative;
+  width: 175px;
+  color: black;
+  font-size: 12px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .card--body p {
-  text-align: justify;
+  margin: 0;
 }
 
-.card--footer-social {
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+.card--stats {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  background-color: #161619;
-  padding: 20px;
-  border-radius: 0 0 10px 10px;
 }
 
-.card--footer-social img{
-  width: 25px;
-  height: 25px;
+.card--star {
+  height: 14px;
+}
+
+.card--price {
+  margin-top: auto;
+}
+
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
